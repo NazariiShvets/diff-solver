@@ -29,7 +29,7 @@ function App() {
         return;
       }
 
-      setSolution(response.data.possible_methods.toString());
+      setSolution(response.data.solution_latex);
       setError(null);
     } catch (error) {
       if (axios.isAxiosError(error)) {
